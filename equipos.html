@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Equipos - Milanga League</title>
+  <!-- Fuente Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -21,10 +22,11 @@
     }
     h2 {
       color: #ffcc00;
+      margin-top: 20px;
     }
     .equipos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       padding: 20px;
     }
@@ -33,21 +35,23 @@
       border-radius: 10px;
       padding: 15px;
       transition: 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 15px;
     }
     .equipo img {
       height: 60px;
-      margin-bottom: 10px;
+      border-radius: 5px;
     }
     .equipo:hover {
       background: #3a3a3a;
       transform: scale(1.05);
     }
-    footer {
-      background: #111;
-      padding: 15px;
-      margin-top: 20px;
-      font-size: 14px;
-      color: #ccc;
+    .equipo-info {
+      text-align: left;
+    }
+    .equipo-info p {
+      margin: 5px 0;
     }
     .volver {
       display: inline-block;
@@ -64,6 +68,13 @@
       background: #e6b800;
       transform: scale(1.05);
     }
+    footer {
+      background: #111;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
   </style>
 </head>
 <body>
@@ -73,45 +84,70 @@
   </header>
 
   <h2>⚽ Equipos</h2>
+
   <div class="equipos">
     <div class="equipo">
-      <img src="escudos/equipo1.png" alt="Equipo 1">
-      <p>Napolitanos FC</p>
+      <img src="escudos/equipo1.png" alt="Napolitanos FC">
+      <div class="equipo-info">
+        <p><strong>Napolitanos FC</strong></p>
+        <p>Categoría A</p>
+      </div>
     </div>
     <div class="equipo">
-      <img src="escudos/equipo2.png" alt="Equipo 2">
-      <p>Milanesa Juniors</p>
+      <img src="escudos/equipo2.png" alt="Milanesa Juniors">
+      <div class="equipo-info">
+        <p><strong>Milanesa Juniors</strong></p>
+        <p>Categoría B</p>
+      </div>
     </div>
     <div class="equipo">
-      <img src="escudos/equipo3.png" alt="Equipo 3">
-      <p>Filetazo United</p>
+      <img src="escudos/equipo3.png" alt="Filetazo United">
+      <div class="equipo-info">
+        <p><strong>Filetazo United</strong></p>
+        <p>Categoría A</p>
+      </div>
     </div>
     <div class="equipo">
-      <img src="escudos/equipo4.png" alt="Equipo 4">
-      <p>Supremas FC</p>
+      <img src="escudos/equipo4.png" alt="Supremas FC">
+      <div class="equipo-info">
+        <p><strong>Supremas FC</strong></p>
+        <p>Categoría C</p>
+      </div>
     </div>
     <div class="equipo">
-      <img src="escudos/equipo5.png" alt="Equipo 5">
-      <p>Paty Boys</p>
+      <img src="escudos/equipo5.png" alt="Paty Boys">
+      <div class="equipo-info">
+        <p><strong>Paty Boys</strong></p>
+        <p>Categoría B</p>
+      </div>
     </div>
     <div class="equipo">
-      <img src="escudos/equipo6.png" alt="Equipo 6">
-      <p>Empanados City</p>
+      <img src="escudos/equipo6.png" alt="Empanados City">
+      <div class="equipo-info">
+        <p><strong>Empanados City</strong></p>
+        <p>Categoría A</p>
+      </div>
     </div>
     <div class="equipo">
-      <img src="escudos/equipo7.png" alt="Equipo 7">
-      <p>Napolitana Stars</p>
+      <img src="escudos/equipo7.png" alt="Napolitana Stars">
+      <div class="equipo-info">
+        <p><strong>Napolitana Stars</strong></p>
+        <p>Categoría C</p>
+      </div>
     </div>
     <div class="equipo">
-      <img src="escudos/equipo8.png" alt="Equipo 8">
-      <p>Mega Milangas</p>
+      <img src="escudos/equipo8.png" alt="Mega Milangas">
+      <div class="equipo-info">
+        <p><strong>Mega Milangas</strong></p>
+        <p>Categoría B</p>
+      </div>
     </div>
   </div>
 
   <a class="volver" href="index.html">⬅ Volver al inicio</a>
 
   <footer>
-    <p>© 2025 Milanga League - Creado por toti.</p>
+    <p>© 2025 Milanga League - Creado x toti.</p>
   </footer>
 
 </body>
