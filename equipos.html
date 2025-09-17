@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipos - Milanga League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      background: #ffcc00;
+      padding: 15px;
+    }
+    header img {
+      height: 100px;
+    }
+    h2 {
+      color: #ffcc00;
+    }
+    .equipos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .equipo {
+      background: #2a2a2a;
+      border-radius: 10px;
+      padding: 15px;
+      transition: 0.3s;
+    }
+    .equipo img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    .equipo:hover {
+      background: #3a3a3a;
+      transform: scale(1.05);
+    }
+    footer {
+      background: #111;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+    .volver {
+      display: inline-block;
+      background: #ffcc00;
+      color: #1a1a1a;
+      padding: 10px 20px;
+      margin: 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .volver:hover {
+      background: #e6b800;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="milanguita.png" alt="Logo Milanga League">
+  </header>
+
+  <h2>⚽ Equipos</h2>
+  <div class="equipos">
+    <div class="equipo">
+      <img src="escudos/equipo1.png" alt="Equipo 1">
+      <p>Napolitanos FC</p>
+    </div>
+    <div class="equipo">
+      <img src="escudos/equipo2.png" alt="Equipo 2">
+      <p>Milanesa Juniors</p>
+    </div>
+    <div class="equipo">
+      <img src="escudos/equipo3.png" alt="Equipo 3">
+      <p>Filetazo United</p>
+    </div>
+    <div class="equipo">
+      <img src="escudos/equipo4.png" alt="Equipo 4">
+      <p>Supremas FC</p>
+    </div>
+    <div class="equipo">
+      <img src="escudos/equipo5.png" alt="Equipo 5">
+      <p>Paty Boys</p>
+    </div>
+    <div class="equipo">
+      <img src="escudos/equipo6.png" alt="Equipo 6">
+      <p>Empanados City</p>
+    </div>
+    <div class="equipo">
+      <img src="escudos/equipo7.png" alt="Equipo 7">
+      <p>Napolitana Stars</p>
+    </div>
+    <div class="equipo">
+      <img src="escudos/equipo8.png" alt="Equipo 8">
+      <p>Mega Milangas</p>
+    </div>
+  </div>
+
+  <a class="volver" href="index.html">⬅ Volver al inicio</a>
+
+  <footer>
+    <p>© 2025 Milanga League - Creado por toti.</p>
+  </footer>
+
+</body>
+</html>
