@@ -24,34 +24,36 @@
       padding: 10px;
     }
     nav a {
+      margin: 0 15px;
       color: #fff;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
-      transition: 0.3s;
     }
     nav a:hover {
-      color: #ffcc00;
+      text-decoration: underline;
     }
     h2 {
       color: #ffcc00;
       margin-top: 20px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .redes {
+      margin: 30px auto;
+      max-width: 500px;
+      text-align: left;
     }
-    ul li {
-      margin: 15px 0;
-    }
-    ul a {
-      color: #ffcc00;
-      font-weight: bold;
+    .redes a {
+      display: block;
+      background: #2a2a2a;
+      color: #fff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
       text-decoration: none;
       transition: 0.3s;
     }
-    ul a:hover {
-      color: #fff;
+    .redes a:hover {
+      background: #3a3a3a;
+      transform: scale(1.05);
     }
     footer {
       background: #111;
@@ -63,26 +65,30 @@
   </style>
 </head>
 <body>
+
   <header>
     <img src="milanguita.png" alt="Logo Milanga League">
   </header>
 
   <nav>
-    <a href="index.html">Pantalla Principal</a>
-    <a href="equipos.html">Equipos</a>
-    <a href="redes.html">Redes Sociales</a>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="equipos.html">⚽ Equipos</a>
+    <a href="redes.html">📱 Redes Sociales</a>
+    <a href="historia.html">📖 Historia</a>
   </nav>
 
-  <h2>📱 Redes Sociales</h2>
-  <ul>
-    <li><a href="https://www.tiktok.com/@milanga.league" target="_blank">TikTok</a></li>
-    <li><a href="https://www.youtube.com/@MilangaLeaguex5" target="_blank">YouTube</a></li>
-    <li><a href="https://www.instagram.com/milangaleague.haxball/" target="_blank">Instagram</a></li>
-    <li><a href="https://discord.gg/98FSR8dRqw" target="_blank">Discord</a></li>
-  </ul>
+  <h2>📱 Nuestras Redes Sociales</h2>
+
+  <div class="redes">
+    <a href="https://www.tiktok.com/@milanga.league" target="_blank">🎵 TikTok</a>
+    <a href="https://www.youtube.com/@MilangaLeaguex5" target="_blank">▶️ YouTube</a>
+    <a href="https://www.instagram.com/milangaleague.haxball/" target="_blank">📸 Instagram</a>
+    <a href="https://discord.gg/98FSR8dRqw" target="_blank">💬 Discord</a>
+  </div>
 
   <footer>
     <p>© 2025 Milanga League - Creado x toti.</p>
   </footer>
+
 </body>
 </html>
