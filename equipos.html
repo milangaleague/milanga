@@ -20,27 +20,41 @@
     header img {
       height: 100px;
     }
+    nav {
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     h2 {
       color: #ffcc00;
       margin-top: 20px;
     }
     .equipos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px; /* más espacio entre equipos */
+      padding: 40px;
     }
     .equipo {
       background: #2a2a2a;
       border-radius: 10px;
-      padding: 15px;
+      padding: 20px;
       transition: 0.3s;
       display: flex;
       align-items: center;
       gap: 15px;
+      margin-bottom: 20px; /* separación extra */
     }
     .equipo img {
-      height: 60px;
+      height: 70px;
       border-radius: 5px;
     }
     .equipo:hover {
@@ -52,21 +66,6 @@
     }
     .equipo-info p {
       margin: 5px 0;
-    }
-    .volver {
-      display: inline-block;
-      background: #ffcc00;
-      color: #1a1a1a;
-      padding: 10px 20px;
-      margin: 20px;
-      border-radius: 10px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .volver:hover {
-      background: #e6b800;
-      transform: scale(1.05);
     }
     footer {
       background: #111;
@@ -83,46 +82,51 @@
     <img src="milanguita.png" alt="Logo Milanga League">
   </header>
 
+  <nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="equipos.html">⚽ Equipos</a>
+    <a href="redes.html">📱 Redes Sociales</a>
+  </nav>
+
   <h2>⚽ Equipos</h2>
 
   <div class="equipos">
     <div class="equipo">
-      <img src="escudos/boke.png" 
+      <img src="escudos/boke.png" alt="Boke">
       <div class="equipo-info">
-        <p><strong>Boke x5 </strong></p>
-        <p>Primera Division x5 </p>
+        <p><strong>Boke x5</strong></p>
+        <p>Primera División x5</p>
       </div>
     </div>
     <div class="equipo">
-      <img src="escudos/lyon.png" 
+      <img src="escudos/lyon.png" alt="Lyon">
       <div class="equipo-info">
         <p><strong>Lyon x5</strong></p>
         <p>Copa Proyección x5</p>
       </div>
     </div>
     <div class="equipo">
-      <img src="escudos/nueva.png" 
+      <img src="escudos/nueva.png" alt="Nueva Chicago">
       <div class="equipo-info">
         <p><strong>Nueva Chicago x5</strong></p>
-        <p>Copa Proyección x5 - Segunda División x5 </p>
+        <p>Copa Proyección x5 - Segunda División x5</p>
       </div>
     </div>
     <div class="equipo">
-      <img src="escudos/pumi.png" 
+      <img src="escudos/pumi.png" alt="Pumi">
       <div class="equipo-info">
         <p><strong>Pumi x5</strong></p>
         <p>Primera División x5</p>
       </div>
     </div>
     <div class="equipo">
-      <img src="escudos/stance_united2.png" 
+      <img src="escudos/stance_united2.png" alt="Stanced United">
       <div class="equipo-info">
         <p><strong>Stanced United x5</strong></p>
         <p>Copa Proyección x5</p>
       </div>
     </div>
-
-  <a class="volver" href="index.html">⬅ Volver al inicio</a>
+  </div>
 
   <footer>
     <p>© 2025 Milanga League - Creado x toti.</p>
