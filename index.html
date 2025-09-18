@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Milanga League</title>
+  <title>Pantalla Principal - Milanga League</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -19,43 +19,23 @@
     header img {
       height: 100px;
     }
-    h1 {
-      margin: 20px 0;
-      color: #ffcc00;
-      opacity: 0;
-      animation: fadeIn 2s ease-in forwards;
+    nav {
+      background: #333;
+      padding: 10px;
     }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .menu-principal {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 60vh;
-    }
-    .menu-principal a {
-      display: inline-block;
-      background: #ffcc00;
-      color: #1a1a1a;
-      padding: 15px 30px;
-      margin: 10px;
-      border-radius: 10px;
-      font-weight: bold;
+    nav a {
+      color: #fff;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
       transition: 0.3s;
     }
-    .menu-principal a:hover {
-      background: #e6b800;
-      transform: scale(1.05);
+    nav a:hover {
+      color: #ffcc00;
+    }
+    h1 {
+      margin-top: 30px;
+      color: #ffcc00;
     }
     footer {
       background: #111;
@@ -67,26 +47,21 @@
   </style>
 </head>
 <body>
-
   <header>
     <img src="milanguita.png" alt="Logo Milanga League">
   </header>
 
-  <section id="inicio">
-    <h1>🥇 Bienvenidos a la Milanga League 🥇</h1>
-    <p>La liga más sabrosa de Haxball.</p>
+  <nav>
+    <a href="index.html">Pantalla Principal</a>
+    <a href="equipos.html">Equipos</a>
+    <a href="redes.html">Redes Sociales</a>
+  </nav>
 
-    <div class="menu-principal">
-      <h2>¿A dónde querés ir?</h2>
-      <!-- LINK A LA PÁGINA DE EQUIPOS -->
-      <a href="equipos.html">⚽ Equipos</a>
-    </div>
-  </section>
+  <h1>🏆 Bienvenido a la Milanga League 🏆</h1>
+  <p>El torneo más épico de todos los tiempos.</p>
 
   <footer>
     <p>© 2025 Milanga League - Creado x toti.</p>
   </footer>
-
 </body>
 </html>
-
